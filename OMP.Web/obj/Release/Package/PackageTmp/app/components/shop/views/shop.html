@@ -1,0 +1,23 @@
+﻿<div id="contact-page" class="container">
+    <div class="bg">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="contact-form">
+                    <h2 class="title text-center">Shop</h2>
+
+                    <form name="shopForm" id="main-contact-form" class="contact-form row" name="contact-form" method="post">
+                        <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <input name="shopName" type="text" class="form-control" placeholder="Shop Name" data-ng-model="shop.shopName" required />
+                                <span class="span-invalid" ng-show="shopForm.shopName.$error.required && shopForm.shopName.$dirty">Shop name is required</span>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <button class="btn btn-primary pull-right" type="submit" data-ng-click="save()" data-ng-disabled="!shopForm.$valid || isDisabled">Save</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!--/#contact-page-->

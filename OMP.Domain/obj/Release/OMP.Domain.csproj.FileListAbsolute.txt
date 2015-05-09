@@ -1,0 +1,9 @@
+E:\WORKSPACE\CWC\2015\OMP\OMP.Domain\bin\Release\OMP.Domain.dll.config
+E:\WORKSPACE\CWC\2015\OMP\OMP.Domain\bin\Release\OMP.Domain.dll
+E:\WORKSPACE\CWC\2015\OMP\OMP.Domain\bin\Release\OMP.Domain.pdb
+E:\WORKSPACE\CWC\2015\OMP\OMP.Domain\bin\Release\EntityFramework.dll
+E:\WORKSPACE\CWC\2015\OMP\OMP.Domain\bin\Release\EntityFramework.SqlServer.dll
+E:\WORKSPACE\CWC\2015\OMP\OMP.Domain\bin\Release\EntityFramework.xml
+E:\WORKSPACE\CWC\2015\OMP\OMP.Domain\bin\Release\EntityFramework.SqlServer.xml
+E:\WORKSPACE\CWC\2015\OMP\OMP.Domain\obj\Release\OMP.Domain.dll
+E:\WORKSPACE\CWC\2015\OMP\OMP.Domain\obj\Release\OMP.Domain.pdb

@@ -1,0 +1,81 @@
+<div class="cart_items well">
+
+    <div class="col-md-12">
+        <div class="table-responsive cart_info">
+            <table class="table table-condensed">
+                <thead>
+                    <tr class="cart_menu">
+                        <td style="width:150px; text-align:center" class="image">Item</td>
+                        <td style="width:150px; text-align:center" class="description">Name</td>
+                        <td style="width:150px; text-align:center" class="price">Price</td>
+                        <td style="width:150px; text-align:center" class="quantity">Quantity</td>
+                        <td style="width:150px; text-align:center" class="total">Total</td>
+                        <td style="width:200px; text-align:center" class="total">Review Text</td>
+                        <td style="width:150px; text-align:center" class="total">Review</td>
+                        <td style="width:50px; text-align:center"></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr data-ng-repeat="item in invoice.items">
+                        <td style="width:150px; text-align:center" class="cart_product">
+                            <a href="#/productdetails/{{item.product.id}}"><img height="50" alt="" src="{{baseUrl}}/Content/ProductImageUpload/{{item.product.imageUrl}}"></a>
+                        </td>
+                        <td style="width:150px; text-align:center" class="cart_description">
+                            <h4><a href="#/productdetails/{{item.product.id}}">{{item.product.name}}</a></h4>
+                            <p>Web ID: {{item.product.id}}</p>
+                        </td>
+                        <td style="width:150px; text-align:center" class="cart_price">
+                            <p>{{item.product.unitPrice}}</p>
+                        </td>
+                        <td style="width:150px; text-align:center" class="cart_quantity">
+                            <input type="number" data-ng-model="item.product.qty" class="input-mini form-control" />
+                        </td>
+                        <td style="width:150px; text-align:center" class="cart_total">
+                            <p class="cart_total_price">{{item.product.totalPrice()}}</p>
+                        </td>
+                        <td style ="width:200px; text-align:center"><textarea data-ng-model="item.product.reviewText" class="form-control"></textarea></td>
+                        <td style="width:150px; text-align:center"><button class="btn btn-success" data-ng-click='review($index)'>Review</button></td>
+                        <td style="width:50px; text-align:center" class="cart_delete">
+                            <a class="cart_quantity_delete" href="" data-ng-click="removeFromCart($index)"><i class="fa fa-times"></i></a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><a href data-ng-click="addToCart()" class="btn btn-small">+</a></td>
+                        <td></td>
+                        <td></td>
+                        <td style="width:50px; text-align:center"><p class="cart_total_price">Total: </p></td>
+                        <td style="width:50px; text-align:center"><p class="cart_total_price">{{total() | currency}}</p></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="do_action">
+        <div class="container">
+            <div class="heading">
+                <h3>What would you like to do next?</h3>
+                <p>Choose if you have a discount code or reward points you want to use or would like to estimate your delivery cost.</p>
+            </div>
+            <div class="row">
+
+                <div class="col-sm-6">
+                    <div class="total_area">
+                        <ul>
+                            <li>Cart Sub Total <span>{{total() | currency}}</span></li>
+                            <li>Vat <span>{{totalVat() | currency}}</span></li>
+                            <li>Shipping Cost <span>Free</span></li>
+                            <li>Total <span>{{totalWithVat() | currency}}</span></li>
+                        </ul>
+                        <a class="btn btn-default update" href="">Update</a>
+                        <a class="btn btn-default check_out" ng-click="order()" href="">Check Out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+

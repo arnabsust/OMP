@@ -1,0 +1,10 @@
+E:\WORKSPACE\CWC\2015\OMP\OMP.Domain\bin\Debug\OMP.Domain.dll.config
+E:\WORKSPACE\CWC\2015\OMP\OMP.Domain\bin\Debug\OMP.Domain.dll
+E:\WORKSPACE\CWC\2015\OMP\OMP.Domain\bin\Debug\OMP.Domain.pdb
+E:\WORKSPACE\CWC\2015\OMP\OMP.Domain\bin\Debug\EntityFramework.dll
+E:\WORKSPACE\CWC\2015\OMP\OMP.Domain\bin\Debug\EntityFramework.SqlServer.dll
+E:\WORKSPACE\CWC\2015\OMP\OMP.Domain\bin\Debug\EntityFramework.xml
+E:\WORKSPACE\CWC\2015\OMP\OMP.Domain\bin\Debug\EntityFramework.SqlServer.xml
+E:\WORKSPACE\CWC\2015\OMP\OMP.Domain\obj\Debug\OMP.Domain.csprojResolveAssemblyReference.cache
+E:\WORKSPACE\CWC\2015\OMP\OMP.Domain\obj\Debug\OMP.Domain.dll
+E:\WORKSPACE\CWC\2015\OMP\OMP.Domain\obj\Debug\OMP.Domain.pdb

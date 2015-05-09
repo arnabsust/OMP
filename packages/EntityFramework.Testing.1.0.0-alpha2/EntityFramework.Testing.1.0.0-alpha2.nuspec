@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>EntityFramework.Testing</id>
+    <version>1.0.0-alpha2</version>
+    <title>EntityFramework.Testing</title>
+    <authors>Rowan Miller</authors>
+    <owners>Rowan Miller</owners>
+    <licenseUrl>https://github.com/rowanmiller/EntityFramework.Testing/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/rowanmiller/EntityFramework.Testing/wiki</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Early preview of some testing helpers for Entity Framework.</description>
+    <copyright>Copyright 2014</copyright>
+    <tags>Entity Framework EF EF6 Testing</tags>
+    <dependencies>
+      <dependency id="EntityFramework" version="6.0.0" />
+    </dependencies>
+  </metadata>
+</package>

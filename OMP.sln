@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30626.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMP.Domain", "OMP.Domain\OMP.Domain.csproj", "{A7D12084-E5F6-4E5B-805E-3C129C631D87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMP.API", "OMP.API\OMP.API.csproj", "{FEF9A9B3-76EB-44FC-AC22-5C58B11D65FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMP.Web", "OMP.Web\OMP.Web.csproj", "{0186DF0D-3D30-4226-AA54-EF77FE218207}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMP.Service", "OMP.Service\OMP.Service.csproj", "{9DEB70E6-6451-4682-8829-4F060C30F764}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://cwcstl.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = OMP.Domain\\OMP.Domain.csproj
+		SccProjectName1 = OMP.Domain
+		SccLocalPath1 = OMP.Domain
+		SccProjectUniqueName2 = OMP.API\\OMP.API.csproj
+		SccProjectName2 = OMP.API
+		SccLocalPath2 = OMP.API
+		SccProjectUniqueName3 = OMP.Web\\OMP.Web.csproj
+		SccProjectName3 = OMP.Web
+		SccLocalPath3 = OMP.Web
+		SccProjectUniqueName4 = OMP.Service\\OMP.Service.csproj
+		SccProjectName4 = OMP.Service
+		SccLocalPath4 = OMP.Service
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7D12084-E5F6-4E5B-805E-3C129C631D87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7D12084-E5F6-4E5B-805E-3C129C631D87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7D12084-E5F6-4E5B-805E-3C129C631D87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7D12084-E5F6-4E5B-805E-3C129C631D87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEF9A9B3-76EB-44FC-AC22-5C58B11D65FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEF9A9B3-76EB-44FC-AC22-5C58B11D65FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEF9A9B3-76EB-44FC-AC22-5C58B11D65FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEF9A9B3-76EB-44FC-AC22-5C58B11D65FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0186DF0D-3D30-4226-AA54-EF77FE218207}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0186DF0D-3D30-4226-AA54-EF77FE218207}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0186DF0D-3D30-4226-AA54-EF77FE218207}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0186DF0D-3D30-4226-AA54-EF77FE218207}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DEB70E6-6451-4682-8829-4F060C30F764}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DEB70E6-6451-4682-8829-4F060C30F764}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DEB70E6-6451-4682-8829-4F060C30F764}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DEB70E6-6451-4682-8829-4F060C30F764}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(CodealikeProperties) = postSolution
+		SolutionGuid = b67269a3-6754-4506-b03b-e9ebe3ab3eb9
+	EndGlobalSection
+EndGlobal

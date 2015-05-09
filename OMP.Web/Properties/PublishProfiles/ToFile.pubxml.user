@@ -1,0 +1,724 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\Web</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="app/app.module.js">
+      <publishTime>01/31/2015 03:06:09</publishTime>
+    </File>
+    <File Include="app/app.routes.js">
+      <publishTime>01/31/2015 13:09:56</publishTime>
+    </File>
+    <File Include="app/components/authentication/controllers/associateCtrl.js">
+      <publishTime>01/25/2015 23:50:14</publishTime>
+    </File>
+    <File Include="app/components/authentication/controllers/loginCtrl.js">
+      <publishTime>01/31/2015 00:30:46</publishTime>
+    </File>
+    <File Include="app/components/authentication/controllers/refreshCtrl.js">
+      <publishTime>01/25/2015 23:08:36</publishTime>
+    </File>
+    <File Include="app/components/authentication/controllers/signupCtrl.js">
+      <publishTime>01/18/2015 02:13:49</publishTime>
+    </File>
+    <File Include="app/components/authentication/services/authInterceptorService.js">
+      <publishTime>01/18/2015 13:45:40</publishTime>
+    </File>
+    <File Include="app/components/authentication/services/authService.js">
+      <publishTime>01/31/2015 09:20:38</publishTime>
+    </File>
+    <File Include="app/components/authentication/views/associate.html">
+      <publishTime>01/21/2015 23:09:21</publishTime>
+    </File>
+    <File Include="app/components/authentication/views/login.html">
+      <publishTime>01/31/2015 01:38:12</publishTime>
+    </File>
+    <File Include="app/components/authentication/views/refresh.html">
+      <publishTime>01/25/2015 23:08:37</publishTime>
+    </File>
+    <File Include="app/components/authentication/views/signup.html">
+      <publishTime>01/31/2015 01:37:21</publishTime>
+    </File>
+    <File Include="app/components/buyer/controllers/shoppingCtrl.js">
+      <publishTime>01/26/2015 23:39:41</publishTime>
+    </File>
+    <File Include="app/components/buyer/services/shoppingCartService.js">
+      <publishTime>01/26/2015 23:39:41</publishTime>
+    </File>
+    <File Include="app/components/buyer/views/billingAddress/shopping.billing.address.step.html">
+      <publishTime>01/26/2015 23:39:42</publishTime>
+    </File>
+    <File Include="app/components/buyer/views/membershipOffer/membershipOffer.css">
+      <publishTime>01/26/2015 23:39:42</publishTime>
+    </File>
+    <File Include="app/components/buyer/views/membershipOffer/shopping.membership.offer.step.html">
+      <publishTime>01/26/2015 23:39:42</publishTime>
+    </File>
+    <File Include="app/components/buyer/views/payment/shopping.payment.step.html">
+      <publishTime>01/26/2015 23:39:42</publishTime>
+    </File>
+    <File Include="app/components/buyer/views/paymentMethod/Delta.png">
+      <publishTime>01/26/2015 23:39:44</publishTime>
+    </File>
+    <File Include="app/components/buyer/views/paymentMethod/Discover.png">
+      <publishTime>01/26/2015 23:39:44</publishTime>
+    </File>
+    <File Include="app/components/buyer/views/paymentMethod/Maestro.png">
+      <publishTime>01/26/2015 23:39:45</publishTime>
+    </File>
+    <File Include="app/components/buyer/views/paymentMethod/MasterCard.png">
+      <publishTime>01/26/2015 23:39:45</publishTime>
+    </File>
+    <File Include="app/components/buyer/views/paymentMethod/paymentMethod.css">
+      <publishTime>01/26/2015 23:39:43</publishTime>
+    </File>
+    <File Include="app/components/buyer/views/paymentMethod/shopping.payment.method.step.html">
+      <publishTime>01/26/2015 23:39:43</publishTime>
+    </File>
+    <File Include="app/components/buyer/views/paymentMethod/Visa.png">
+      <publishTime>01/26/2015 23:39:46</publishTime>
+    </File>
+    <File Include="app/components/buyer/views/paymentMethod/VisaElectron.png">
+      <publishTime>01/26/2015 23:39:48</publishTime>
+    </File>
+    <File Include="app/components/buyer/views/shippingAddress/shopping.shipping.address.step.html">
+      <publishTime>01/26/2015 23:39:44</publishTime>
+    </File>
+    <File Include="app/components/buyer/views/shippingMethod/shippingMethod.css">
+      <publishTime>01/26/2015 23:39:44</publishTime>
+    </File>
+    <File Include="app/components/buyer/views/shippingMethod/shopping.shipping.method.step.html">
+      <publishTime>01/26/2015 23:39:44</publishTime>
+    </File>
+    <File Include="app/components/buyer/views/shopping.billing.address.html">
+      <publishTime>01/26/2015 23:39:42</publishTime>
+    </File>
+    <File Include="app/components/buyer/views/shopping.cart.html">
+      <publishTime>01/26/2015 23:39:42</publishTime>
+    </File>
+    <File Include="app/components/buyer/views/shopping.invoice.html">
+      <publishTime>01/26/2015 23:39:41</publishTime>
+    </File>
+    <File Include="app/components/buyer/views/shopping.membership.offer.html">
+      <publishTime>01/26/2015 23:39:41</publishTime>
+    </File>
+    <File Include="app/components/buyer/views/shopping.payment.html">
+      <publishTime>01/26/2015 23:39:41</publishTime>
+    </File>
+    <File Include="app/components/buyer/views/shopping.payment.method.html">
+      <publishTime>01/26/2015 23:39:41</publishTime>
+    </File>
+    <File Include="app/components/buyer/views/shopping.shipping.address.html">
+      <publishTime>01/26/2015 23:39:41</publishTime>
+    </File>
+    <File Include="app/components/buyer/views/shopping.shipping.method.html">
+      <publishTime>01/26/2015 23:39:42</publishTime>
+    </File>
+    <File Include="app/components/buyer/views/shopping.status.html">
+      <publishTime>01/26/2015 23:39:42</publishTime>
+    </File>
+    <File Include="app/components/buyer/views/shoppingCart.html">
+      <publishTime>01/26/2015 23:39:42</publishTime>
+    </File>
+    <File Include="app/components/buyer/views/shoppingCart/shopping.cart.step.html">
+      <publishTime>01/26/2015 23:39:44</publishTime>
+    </File>
+    <File Include="app/components/buyer/views/shoppingCart/stepwizard.css">
+      <publishTime>01/26/2015 23:39:44</publishTime>
+    </File>
+    <File Include="app/components/buyer/views/shoppingInvoice/shopping.invoice.step.html">
+      <publishTime>01/26/2015 23:39:45</publishTime>
+    </File>
+    <File Include="app/components/buyer/views/shoppingInvoice/shoppingInvoice.css">
+      <publishTime>01/26/2015 23:39:45</publishTime>
+    </File>
+    <File Include="app/components/buyer/views/shoppingStatus/shoppingStatus.css">
+      <publishTime>01/26/2015 23:39:45</publishTime>
+    </File>
+    <File Include="app/components/cart/controllers/cartCtrl.js">
+      <publishTime>01/31/2015 15:39:03</publishTime>
+    </File>
+    <File Include="app/components/cart/services/cartService.js">
+      <publishTime>01/31/2015 15:30:46</publishTime>
+    </File>
+    <File Include="app/components/cart/views/cart.html">
+      <publishTime>01/31/2015 15:27:15</publishTime>
+    </File>
+    <File Include="app/components/cart/views/cart/cart.css">
+      <publishTime>01/31/2015 05:45:09</publishTime>
+    </File>
+    <File Include="app/components/global/controllers/indexCtrl.js">
+      <publishTime>01/31/2015 08:46:37</publishTime>
+    </File>
+    <File Include="app/components/global/controllers/uploadCtrl.js">
+      <publishTime>01/30/2015 17:00:17</publishTime>
+    </File>
+    <File Include="app/components/global/service/signalr-service.js">
+      <publishTime>01/29/2015 00:30:53</publishTime>
+    </File>
+    <File Include="app/components/home/controllers/aboutCtrl.js">
+      <publishTime>01/18/2015 13:50:37</publishTime>
+    </File>
+    <File Include="app/components/home/controllers/homeCtrl.js">
+      <publishTime>01/31/2015 01:43:24</publishTime>
+    </File>
+    <File Include="app/components/home/views/about.html">
+      <publishTime>01/29/2015 18:35:37</publishTime>
+    </File>
+    <File Include="app/components/home/views/about/1.jpg">
+      <publishTime>01/18/2015 13:50:37</publishTime>
+    </File>
+    <File Include="app/components/home/views/about/2.jpg">
+      <publishTime>01/18/2015 13:50:37</publishTime>
+    </File>
+    <File Include="app/components/home/views/about/3.jpg">
+      <publishTime>01/18/2015 13:50:38</publishTime>
+    </File>
+    <File Include="app/components/home/views/about/4.jpg">
+      <publishTime>01/18/2015 13:50:37</publishTime>
+    </File>
+    <File Include="app/components/home/views/home.html">
+      <publishTime>01/26/2015 23:39:45</publishTime>
+    </File>
+    <File Include="app/components/home/views/home/home.css">
+      <publishTime>01/25/2015 23:08:37</publishTime>
+    </File>
+    <File Include="app/components/product/controllers/orderCtrl.js">
+      <publishTime>01/31/2015 14:41:37</publishTime>
+    </File>
+    <File Include="app/components/product/controllers/productCtrl.js">
+      <publishTime>01/31/2015 10:38:55</publishTime>
+    </File>
+    <File Include="app/components/product/controllers/productDetailCtrl.js">
+      <publishTime>01/31/2015 15:38:17</publishTime>
+    </File>
+    <File Include="app/components/product/controllers/productUploadCtrl.js">
+      <publishTime>01/30/2015 23:22:01</publishTime>
+    </File>
+    <File Include="app/components/product/controllers/wishListCtrl.js">
+      <publishTime>01/31/2015 10:24:22</publishTime>
+    </File>
+    <File Include="app/components/product/services/productCategoryService.js">
+      <publishTime>01/30/2015 19:34:33</publishTime>
+    </File>
+    <File Include="app/components/product/services/productDetailsService.js">
+      <publishTime>01/31/2015 02:16:00</publishTime>
+    </File>
+    <File Include="app/components/product/services/productService.js">
+      <publishTime>01/31/2015 14:30:13</publishTime>
+    </File>
+    <File Include="app/components/product/services/productUploadService.js">
+      <publishTime>01/30/2015 23:21:08</publishTime>
+    </File>
+    <File Include="app/components/product/views/orderList.html">
+      <publishTime>01/31/2015 14:44:05</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/dell-streak-7.0.jpg">
+      <publishTime>01/21/2015 23:05:23</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/dell-streak-7.1.jpg">
+      <publishTime>01/21/2015 23:05:23</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/dell-streak-7.2.jpg">
+      <publishTime>01/21/2015 23:05:23</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/dell-streak-7.3.jpg">
+      <publishTime>01/21/2015 23:05:24</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/dell-streak-7.4.jpg">
+      <publishTime>01/21/2015 23:05:23</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/dell-venue.0.jpg">
+      <publishTime>01/21/2015 23:05:24</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/dell-venue.1.jpg">
+      <publishTime>01/21/2015 23:05:23</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/dell-venue.2.jpg">
+      <publishTime>01/21/2015 23:05:23</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/dell-venue.3.jpg">
+      <publishTime>01/21/2015 23:05:25</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/dell-venue.4.jpg">
+      <publishTime>01/21/2015 23:05:24</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/dell-venue.5.jpg">
+      <publishTime>01/21/2015 23:05:25</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/droid-2-global-by-motorola.0.jpg">
+      <publishTime>01/21/2015 23:05:24</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/droid-2-global-by-motorola.1.jpg">
+      <publishTime>01/21/2015 23:05:26</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/droid-2-global-by-motorola.2.jpg">
+      <publishTime>01/21/2015 23:05:25</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/droid-pro-by-motorola.0.jpg">
+      <publishTime>01/21/2015 23:05:25</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/droid-pro-by-motorola.1.jpg">
+      <publishTime>01/21/2015 23:05:27</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/lg-axis.0.jpg">
+      <publishTime>01/21/2015 23:05:27</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/lg-axis.1.jpg">
+      <publishTime>01/21/2015 23:05:26</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/lg-axis.2.jpg">
+      <publishTime>01/21/2015 23:05:25</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/motorola-atrix-4g.0.jpg">
+      <publishTime>01/21/2015 23:05:25</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/motorola-atrix-4g.1.jpg">
+      <publishTime>01/21/2015 23:05:25</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/motorola-atrix-4g.2.jpg">
+      <publishTime>01/21/2015 23:05:32</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/motorola-atrix-4g.3.jpg">
+      <publishTime>01/21/2015 23:05:27</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/motorola-bravo-with-motoblur.0.jpg">
+      <publishTime>01/21/2015 23:05:27</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/motorola-bravo-with-motoblur.1.jpg">
+      <publishTime>01/21/2015 23:05:26</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/motorola-bravo-with-motoblur.2.jpg">
+      <publishTime>01/21/2015 23:05:27</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/motorola-charm-with-motoblur.0.jpg">
+      <publishTime>01/21/2015 23:05:28</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/motorola-charm-with-motoblur.1.jpg">
+      <publishTime>01/21/2015 23:05:28</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/motorola-charm-with-motoblur.2.jpg">
+      <publishTime>01/21/2015 23:05:28</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/motorola-defy-with-motoblur.0.jpg">
+      <publishTime>01/21/2015 23:05:28</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/motorola-defy-with-motoblur.1.jpg">
+      <publishTime>01/21/2015 23:05:29</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/motorola-defy-with-motoblur.2.jpg">
+      <publishTime>01/21/2015 23:05:27</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/motorola-xoom-with-wi-fi.0.jpg">
+      <publishTime>01/21/2015 23:05:29</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/motorola-xoom-with-wi-fi.1.jpg">
+      <publishTime>01/21/2015 23:05:30</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/motorola-xoom-with-wi-fi.2.jpg">
+      <publishTime>01/21/2015 23:05:29</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/motorola-xoom-with-wi-fi.3.jpg">
+      <publishTime>01/21/2015 23:05:31</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/motorola-xoom-with-wi-fi.4.jpg">
+      <publishTime>01/21/2015 23:05:30</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/motorola-xoom-with-wi-fi.5.jpg">
+      <publishTime>01/21/2015 23:05:29</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/motorola-xoom.0.jpg">
+      <publishTime>01/21/2015 23:05:29</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/motorola-xoom.1.jpg">
+      <publishTime>01/21/2015 23:05:29</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/motorola-xoom.2.jpg">
+      <publishTime>01/21/2015 23:05:29</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/nexus-s.0.jpg">
+      <publishTime>01/21/2015 23:05:30</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/nexus-s.1.jpg">
+      <publishTime>01/21/2015 23:05:30</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/nexus-s.2.jpg">
+      <publishTime>01/21/2015 23:05:30</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/nexus-s.3.jpg">
+      <publishTime>01/21/2015 23:05:31</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/samsung-galaxy-tab.0.jpg">
+      <publishTime>01/21/2015 23:05:30</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/samsung-galaxy-tab.1.jpg">
+      <publishTime>01/21/2015 23:05:31</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/samsung-galaxy-tab.2.jpg">
+      <publishTime>01/21/2015 23:05:31</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/samsung-galaxy-tab.3.jpg">
+      <publishTime>01/21/2015 23:05:32</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/samsung-galaxy-tab.4.jpg">
+      <publishTime>01/21/2015 23:05:31</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/samsung-galaxy-tab.5.jpg">
+      <publishTime>01/21/2015 23:05:31</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/samsung-galaxy-tab.6.jpg">
+      <publishTime>01/21/2015 23:05:31</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/samsung-gem.0.jpg">
+      <publishTime>01/21/2015 23:05:31</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/samsung-gem.1.jpg">
+      <publishTime>01/21/2015 23:05:32</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/samsung-gem.2.jpg">
+      <publishTime>01/21/2015 23:05:32</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/samsung-mesmerize-a-galaxy-s-phone.0.jpg">
+      <publishTime>01/21/2015 23:05:33</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/samsung-mesmerize-a-galaxy-s-phone.1.jpg">
+      <publishTime>01/21/2015 23:05:32</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/samsung-mesmerize-a-galaxy-s-phone.2.jpg">
+      <publishTime>01/21/2015 23:05:35</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/samsung-mesmerize-a-galaxy-s-phone.3.jpg">
+      <publishTime>01/21/2015 23:05:32</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/samsung-showcase-a-galaxy-s-phone.0.jpg">
+      <publishTime>01/21/2015 23:05:33</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/samsung-showcase-a-galaxy-s-phone.1.jpg">
+      <publishTime>01/21/2015 23:05:33</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/samsung-showcase-a-galaxy-s-phone.2.jpg">
+      <publishTime>01/21/2015 23:05:32</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/samsung-transform.0.jpg">
+      <publishTime>01/21/2015 23:05:34</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/samsung-transform.1.jpg">
+      <publishTime>01/21/2015 23:05:37</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/samsung-transform.2.jpg">
+      <publishTime>01/21/2015 23:05:33</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/samsung-transform.3.jpg">
+      <publishTime>01/21/2015 23:05:34</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/samsung-transform.4.jpg">
+      <publishTime>01/21/2015 23:05:34</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/sanyo-zio.0.jpg">
+      <publishTime>01/21/2015 23:05:36</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/sanyo-zio.1.jpg">
+      <publishTime>01/21/2015 23:05:34</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/sanyo-zio.2.jpg">
+      <publishTime>01/21/2015 23:05:35</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/t-mobile-g2.0.jpg">
+      <publishTime>01/21/2015 23:05:35</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/t-mobile-g2.1.jpg">
+      <publishTime>01/21/2015 23:05:38</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/t-mobile-g2.2.jpg">
+      <publishTime>01/21/2015 23:05:36</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/t-mobile-mytouch-4g.0.jpg">
+      <publishTime>01/21/2015 23:05:36</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/t-mobile-mytouch-4g.1.jpg">
+      <publishTime>01/21/2015 23:05:36</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/t-mobile-mytouch-4g.2.jpg">
+      <publishTime>01/21/2015 23:05:35</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/t-mobile-mytouch-4g.3.jpg">
+      <publishTime>01/21/2015 23:05:38</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/t-mobile-mytouch-4g.4.jpg">
+      <publishTime>01/21/2015 23:05:36</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/images/t-mobile-mytouch-4g.5.jpg">
+      <publishTime>01/21/2015 23:05:37</publishTime>
+    </File>
+    <File Include="app/components/product/views/product/product.css">
+      <publishTime>01/25/2015 23:08:37</publishTime>
+    </File>
+    <File Include="app/components/product/views/productDetails.html">
+      <publishTime>01/31/2015 14:46:35</publishTime>
+    </File>
+    <File Include="app/components/product/views/productOffer/productOffer.css">
+      <publishTime>01/26/2015 23:39:45</publishTime>
+    </File>
+    <File Include="app/components/product/views/products.html">
+      <publishTime>01/31/2015 10:20:20</publishTime>
+    </File>
+    <File Include="app/components/product/views/productUpload.html">
+      <publishTime>01/31/2015 07:30:29</publishTime>
+    </File>
+    <File Include="app/components/product/views/wishlist.html">
+      <publishTime>01/31/2015 10:19:34</publishTime>
+    </File>
+    <File Include="app/components/shop/controllers/shopCtrl.js">
+      <publishTime>01/30/2015 00:35:23</publishTime>
+    </File>
+    <File Include="app/components/shop/services/shopService.js">
+      <publishTime>01/30/2015 00:35:24</publishTime>
+    </File>
+    <File Include="app/components/shop/views/shop.html">
+      <publishTime>01/30/2015 00:35:25</publishTime>
+    </File>
+    <File Include="app/components/user/controllers/profileCtrl.js">
+      <publishTime>01/29/2015 01:36:52</publishTime>
+    </File>
+    <File Include="app/components/user/controllers/userProfileTabCtrl.js">
+      <publishTime>01/31/2015 11:19:59</publishTime>
+    </File>
+    <File Include="app/components/user/services/profileService.js">
+      <publishTime>01/31/2015 12:46:24</publishTime>
+    </File>
+    <File Include="app/components/user/views/profile.html">
+      <publishTime>01/31/2015 17:51:22</publishTime>
+    </File>
+    <File Include="app/shared/animations.js">
+      <publishTime>01/25/2015 23:08:37</publishTime>
+    </File>
+    <File Include="app/shared/directive/modalDialog.js">
+      <publishTime>01/31/2015 15:01:42</publishTime>
+    </File>
+    <File Include="assets/css/site.css">
+      <publishTime>01/31/2015 17:56:53</publishTime>
+    </File>
+    <File Include="assets/css/vendor/angular-loading-bar/loading-bar.min.css">
+      <publishTime>01/20/2015 00:18:42</publishTime>
+    </File>
+    <File Include="assets/css/vendor/angular-toaster/toaster.min.css">
+      <publishTime>01/29/2015 01:26:10</publishTime>
+    </File>
+    <File Include="assets/css/vendor/bootstrap/bootstrap.min.css">
+      <publishTime>01/30/2015 10:00:55</publishTime>
+    </File>
+    <File Include="assets/css/vendor/font-awesome/font-awesome.min.css">
+      <publishTime>01/29/2015 02:16:21</publishTime>
+    </File>
+    <File Include="assets/css/vendor/fonts/fontawesome-webfont.svg">
+      <publishTime>01/29/2015 02:58:01</publishTime>
+    </File>
+    <File Include="assets/css/vendor/fonts/fontawesome-webfont.woff">
+      <publishTime>01/29/2015 02:58:01</publishTime>
+    </File>
+    <File Include="assets/css/vendor/fonts/FontAwesome.otf">
+      <publishTime>01/29/2015 02:58:01</publishTime>
+    </File>
+    <File Include="assets/css/vendor/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>01/29/2015 02:58:01</publishTime>
+    </File>
+    <File Include="assets/css/vendor/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>01/29/2015 02:58:01</publishTime>
+    </File>
+    <File Include="assets/css/vendor/main.css">
+      <publishTime>01/29/2015 03:01:09</publishTime>
+    </File>
+    <File Include="assets/css/vendor/responsive/responsive.css">
+      <publishTime>01/29/2015 02:16:21</publishTime>
+    </File>
+    <File Include="assets/images/cart/one.png">
+      <publishTime>01/29/2015 02:28:19</publishTime>
+    </File>
+    <File Include="assets/images/cart/three.png">
+      <publishTime>01/29/2015 02:28:19</publishTime>
+    </File>
+    <File Include="assets/images/cart/two.png">
+      <publishTime>01/29/2015 02:28:19</publishTime>
+    </File>
+    <File Include="assets/images/home/bg_border.png">
+      <publishTime>01/29/2015 02:28:19</publishTime>
+    </File>
+    <File Include="assets/images/home/logo.png">
+      <publishTime>01/31/2015 00:47:32</publishTime>
+    </File>
+    <File Include="assets/images/home/new.png">
+      <publishTime>01/29/2015 02:28:19</publishTime>
+    </File>
+    <File Include="assets/images/home/product1.jpg">
+      <publishTime>01/29/2015 02:28:19</publishTime>
+    </File>
+    <File Include="assets/images/home/product2.jpg">
+      <publishTime>01/29/2015 02:28:19</publishTime>
+    </File>
+    <File Include="assets/images/home/product3.jpg">
+      <publishTime>01/29/2015 02:28:19</publishTime>
+    </File>
+    <File Include="assets/images/home/product4.jpg">
+      <publishTime>01/29/2015 02:28:19</publishTime>
+    </File>
+    <File Include="assets/images/home/product5.jpg">
+      <publishTime>01/29/2015 02:28:19</publishTime>
+    </File>
+    <File Include="assets/images/home/product6.jpg">
+      <publishTime>01/29/2015 02:28:19</publishTime>
+    </File>
+    <File Include="assets/images/home/searchicon.png">
+      <publishTime>01/29/2015 02:28:19</publishTime>
+    </File>
+    <File Include="assets/images/product-details/1.jpg">
+      <publishTime>01/29/2015 02:28:19</publishTime>
+    </File>
+    <File Include="assets/images/product-details/new.jpg">
+      <publishTime>01/29/2015 02:28:19</publishTime>
+    </File>
+    <File Include="assets/images/product-details/rating.png">
+      <publishTime>01/29/2015 02:28:19</publishTime>
+    </File>
+    <File Include="assets/images/product-details/share.png">
+      <publishTime>01/29/2015 02:28:19</publishTime>
+    </File>
+    <File Include="assets/images/product-details/similar1.jpg">
+      <publishTime>01/29/2015 02:28:19</publishTime>
+    </File>
+    <File Include="assets/images/product-details/similar2.jpg">
+      <publishTime>01/29/2015 02:28:19</publishTime>
+    </File>
+    <File Include="assets/images/product-details/similar3.jpg">
+      <publishTime>01/29/2015 02:28:19</publishTime>
+    </File>
+    <File Include="assets/js/custom/authComplete.js">
+      <publishTime>01/27/2015 00:17:24</publishTime>
+    </File>
+    <File Include="assets/js/vendor/angular-file-upload/angular-file-upload-shim.js">
+      <publishTime>01/29/2015 20:19:24</publishTime>
+    </File>
+    <File Include="assets/js/vendor/angular-file-upload/angular-file-upload.js">
+      <publishTime>01/29/2015 20:19:24</publishTime>
+    </File>
+    <File Include="assets/js/vendor/angular-infinite-scroll/ng-infinite-scroll.min.js">
+      <publishTime>01/30/2015 18:33:57</publishTime>
+    </File>
+    <File Include="assets/js/vendor/angular-loading-bar/loading-bar.min.js">
+      <publishTime>01/16/2015 20:22:50</publishTime>
+    </File>
+    <File Include="assets/js/vendor/angular-local-storage/angular-local-storage.min.js">
+      <publishTime>01/16/2015 21:14:33</publishTime>
+    </File>
+    <File Include="assets/js/vendor/angular-ng-flow/ng-flow-standalone.min.js">
+      <publishTime>01/27/2015 00:17:16</publishTime>
+    </File>
+    <File Include="assets/js/vendor/angular-toaster/toaster.min.js">
+      <publishTime>01/29/2015 01:26:38</publishTime>
+    </File>
+    <File Include="assets/js/vendor/angular-ui-router/angular-ui-router.min.js">
+      <publishTime>01/16/2015 20:22:50</publishTime>
+    </File>
+    <File Include="assets/js/vendor/angular-ui/ui-bootstrap-tpls-0.11.0.min.js">
+      <publishTime>01/31/2015 03:04:44</publishTime>
+    </File>
+    <File Include="assets/js/vendor/angular/angular-animate.min.js">
+      <publishTime>01/16/2015 20:22:49</publishTime>
+    </File>
+    <File Include="assets/js/vendor/angular/angular-animate.min.js.map">
+      <publishTime>01/16/2015 20:22:49</publishTime>
+    </File>
+    <File Include="assets/js/vendor/angular/angular-aria.min.js">
+      <publishTime>01/16/2015 20:22:49</publishTime>
+    </File>
+    <File Include="assets/js/vendor/angular/angular-aria.min.js.map">
+      <publishTime>01/16/2015 20:22:49</publishTime>
+    </File>
+    <File Include="assets/js/vendor/angular/angular-cookies.min.js">
+      <publishTime>01/16/2015 20:22:49</publishTime>
+    </File>
+    <File Include="assets/js/vendor/angular/angular-cookies.min.js.map">
+      <publishTime>01/16/2015 20:22:49</publishTime>
+    </File>
+    <File Include="assets/js/vendor/angular/angular-loader.min.js">
+      <publishTime>01/16/2015 20:22:49</publishTime>
+    </File>
+    <File Include="assets/js/vendor/angular/angular-loader.min.js.map">
+      <publishTime>01/16/2015 20:22:49</publishTime>
+    </File>
+    <File Include="assets/js/vendor/angular/angular-messages.min.js">
+      <publishTime>01/16/2015 20:22:49</publishTime>
+    </File>
+    <File Include="assets/js/vendor/angular/angular-messages.min.js.map">
+      <publishTime>01/16/2015 20:22:49</publishTime>
+    </File>
+    <File Include="assets/js/vendor/angular/angular-resource.min.js">
+      <publishTime>01/16/2015 20:22:49</publishTime>
+    </File>
+    <File Include="assets/js/vendor/angular/angular-resource.min.js.map">
+      <publishTime>01/16/2015 20:22:49</publishTime>
+    </File>
+    <File Include="assets/js/vendor/angular/angular-route.min.js">
+      <publishTime>01/16/2015 20:22:49</publishTime>
+    </File>
+    <File Include="assets/js/vendor/angular/angular-route.min.js.map">
+      <publishTime>01/16/2015 20:22:49</publishTime>
+    </File>
+    <File Include="assets/js/vendor/angular/angular-sanitize.min.js">
+      <publishTime>01/16/2015 20:22:49</publishTime>
+    </File>
+    <File Include="assets/js/vendor/angular/angular-sanitize.min.js.map">
+      <publishTime>01/16/2015 20:22:50</publishTime>
+    </File>
+    <File Include="assets/js/vendor/angular/angular-touch.min.js">
+      <publishTime>01/16/2015 20:22:50</publishTime>
+    </File>
+    <File Include="assets/js/vendor/angular/angular-touch.min.js.map">
+      <publishTime>01/16/2015 20:22:50</publishTime>
+    </File>
+    <File Include="assets/js/vendor/angular/angular.min.js">
+      <publishTime>01/16/2015 20:22:50</publishTime>
+    </File>
+    <File Include="assets/js/vendor/angular/angular.min.js.map">
+      <publishTime>01/16/2015 20:22:50</publishTime>
+    </File>
+    <File Include="assets/js/vendor/bootstrap/bootstrap-filestyle.min.js">
+      <publishTime>01/29/2015 23:01:15</publishTime>
+    </File>
+    <File Include="assets/js/vendor/bootstrap/bootstrap.js">
+      <publishTime>01/16/2015 20:22:50</publishTime>
+    </File>
+    <File Include="assets/js/vendor/bootstrap/bootstrap.min.js">
+      <publishTime>01/16/2015 20:22:50</publishTime>
+    </File>
+    <File Include="assets/js/vendor/jQuery/jquery-1.11.2.min.js">
+      <publishTime>01/26/2015 23:53:32</publishTime>
+    </File>
+    <File Include="assets/js/vendor/jQuery/jquery.prettyPhoto.js">
+      <publishTime>01/29/2015 02:20:48</publishTime>
+    </File>
+    <File Include="assets/js/vendor/price-range/price-range.js">
+      <publishTime>01/29/2015 02:20:48</publishTime>
+    </File>
+    <File Include="assets/js/vendor/signalr/jquery.signalR-2.2.0.min.js">
+      <publishTime>01/29/2015 00:30:54</publishTime>
+    </File>
+    <File Include="authComplete.html">
+      <publishTime>01/25/2015 23:08:36</publishTime>
+    </File>
+    <File Include="bin/OMP.Web.dll">
+      <publishTime>02/24/2015 23:57:47</publishTime>
+    </File>
+    <File Include="index.html">
+      <publishTime>01/31/2015 14:57:27</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>01/31/2015 17:00:09</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

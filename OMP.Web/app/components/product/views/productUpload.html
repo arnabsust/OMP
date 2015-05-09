@@ -1,0 +1,67 @@
+﻿<div class="row well">
+    <div class="col-sm-6">
+        <div class="product-upload-form">
+            <h3 class="title text-center">Upload a product</h3>
+            <hr />
+            <form name="productUploadForm" class="contact-form row" method="post">
+                <div class="row col-md-12">
+                    <div class="form-group col-md-12">
+                        <select data-ng-change="getProductAttributeByCategory()" data-ng-options="item.categoryID as item.categoryName for item in producCategoryList" data-ng-model="productVM.categoryID" class="form-control">
+                            <option value="">Select Product Category</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <input name="productCode" type="text" class="form-control" placeholder="Product Code" data-ng-model="productVM.productCode" required />
+                        <span class="span-invalid" ng-show="productUploadForm.productCode.$error.required && productUploadForm.productCode.$dirty">Product Code is Required</span>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <input name="productTitle" type="text" class="form-control" placeholder="Product Title" data-ng-model="productVM.productTitle" required />
+                        <span class="span-invalid" ng-show="productUploadForm.productTitle.$error.required && productUploadForm.productTitle.$dirty">Product Title is Required</span>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <input name="productShortDescription" type="text" class="form-control" placeholder="Short Description" data-ng-model="productVM.productShortDescription" required />
+                        <span class="span-invalid" ng-show="productUploadForm.productShortDescription.$error.required && productUploadForm.productShortDescription.$dirty">Product Short Description is Required</span>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <textarea name="productDescription" class="form-control" placeholder="Product Description" data-ng-model="productVM.productDescription" />
+                    </div>
+                    <div class="form-group col-md-12">
+                        <input name="unitPrice" type="number" class="form-control" placeholder="Unit Price" data-ng-model="productVM.unitPrice" required />
+                        <span class="span-invalid" ng-show="productUploadForm.unitPrice.$error.number && productUploadForm.productTitle.$dirty">Unit Price Should be Number</span>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <input name="stockQuantity" type="number" class="form-control" placeholder="Stock Quantity" data-ng-model="productVM.stockQuantity" required />
+                        <span class="span-invalid" ng-show="productUploadForm.StockQuantity.$error.number && productUploadForm.stockQuantity.$dirty">Stock Quantity Should be Number</span>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <button class="btn btn-primary pull-right" type="submit" data-ng-click="save()" data-ng-disabled="!productUploadForm.$valid || isDisabled">Save Product</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="col-sm-6" ng-hide="!productVM.productID">
+        <div class="contact-form">
+            <h3 class="title text-center">Product Image</h3>
+            <hr />
+            <div class="form-group">
+                <div ng-controller="productImageUploadCtrl">
+                    <div data-ng-hide="percentage == '0%'" class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{percentage}};">
+                            <span class="sr-only">{{percentage}}</span>
+                        </div>
+                    </div>
+                    <input type="file" class="filestyle" multiple ng-file-select="onFileSelect($files, 'ProductImageUpload')">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="product-image col-sm-3" ng-repeat="item in imageList">
+                    <a class="thumbnail" href="#">
+                        <img src="{{baseUrl}}/Content/ProductImageUpload/{{item.imageUrl}}" title="Jahirul Islam" width="150">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

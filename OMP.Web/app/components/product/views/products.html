@@ -1,0 +1,74 @@
+<div class="row row-offcanvas row-offcanvas-left">
+
+    <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+        <p class="visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas"><i class="glyphicon glyphicon-chevron-left"></i></button>
+        </p>
+        <div class="well sidebar-nav">
+            <ul class="nav" data-ng-repeat="item in categoryList">
+                <li><a href="#" data-ng-click="searchByCategory(item.categoryName)">{{item.categoryName}}</a></li>
+                <li class="active" data-ng-repeat="nestedItem in item.childList"><a href="#" data-ng-click="searchByCategory(nestedItem.categoryName)">-->{{nestedItem.categoryName}}</a></li>
+            </ul>
+        </div><!--/.well -->
+    </div><!--/span-->
+
+    <div class="col-sm-9">
+        <div class="col-sm-12 well">
+            <div class="row">
+                <div class="col-md-4">
+                    <input type="text" placeholder="Keyword" class="form-control" data-ng-model="searchCriteria.keyword" />
+                </div>
+
+                <div class="col-md-2">
+                    <select class="form-control" data-ng-model="sortByPrice">
+                        <option value=""></option>
+                        <option value="1">Low to High</option>
+                        <option value="2">High To Low</option>
+                    </select>
+                </div>
+
+                <div class="col-md-2">
+                    <input type="text" placeholder="Low" class="form-control" data-ng-model="searchCriteria.lowestPrice" />
+                </div>
+
+                <div class="col-md-2">
+                    <input type="text" placeholder="High" class="form-control" data-ng-model="searchCriteria.highestPrice" />
+                </div>
+
+                <div class="col-md-2">
+                    <button class="btn btn-success" data-ng-click="search()">Search</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <a ng-show="authenticated" href="" ng-click="recomendedProducts()">My Recomended Products</a>
+                </div>
+                <div class="col-md-offset-1 col-md-3">
+                    <input type="checkbox" data-ng-model="searchCriteria.sortByMostSold" /> Sort By Most Sold
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 well" data-ng-repeat="item in productList">
+            <div class="product-image col-sm-3">
+                <img width="150" src="{{baseUrl}}/Content/ProductImageUpload/{{item.imageUrl}}">
+            </div>
+            <div class="col-sm-9">
+                <div class="row">
+                    <h4><a href="#/productdetails/{{item.productID}}">{{item.productCode}} - {{item.productTitle}}</a><span class="pull-right dollar">${{item.unitPrice}}</span></h4>
+                </div>
+                <div class="row">
+                    <h5>Category: {{item.categoryName}}</h5>
+                </div>
+                <div class="row">
+                    <p>{{item.productShortDescription}}</p>
+                </div>
+                <div class="row">
+                    <button ng-show="buttons && authenticated" class="btn btn-info" ng-click="createWishlist(item.productID)">Add to My WishList</button>
+                    <a href="#/productupload/{{item.productID}}" ng-show="!buttons" class="btn btn-primary">Edit</a>
+                </div>
+            </div>
+        </div>
+        <a data-ng-click="loadMore()">Load More Products</a>
+    </div>
+
+</div>

@@ -1,0 +1,48 @@
+﻿<div class="row well">
+    <div class="col-sm-4 col-sm-offset-1">
+        <div class="signup-form">
+            <!--sign up form-->
+            <h3>New User Signup!</h3>
+            <hr />
+            <form name="signupForm">
+                <div class="row col-md-12">
+                    <div class="form-group col-md-12">
+                        <input name="fullName" type="text" class="form-control" placeholder="Full Name" data-ng-model="registration.fullName" required autofocus />
+                        <span class="span-invalid" ng-show="signupForm.fullName.$error.required && signupForm.fullName.$dirty">Full Name is required</span>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <input name="email" type="email" class="form-control" placeholder="Email" data-ng-model="registration.email" required />
+                        <span class="span-invalid" ng-show="signupForm.email.$error.required && signupForm.email.$dirty">Email is required</span>
+                        <span class="span-invalid" ng-show="signupForm.email.$error.email && signupForm.email.$dirty">Invalid Email</span>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <input name="userName" type="text" class="form-control" placeholder="Username" data-ng-model="registration.userName" ng-minlength="6" required />
+                        <span class="span-invalid" ng-show="signupForm.userName.$error.required && signupForm.userName.$dirty">User Name is required</span>
+                        <span class="span-invalid" ng-show="signupForm.userName.$error.minlength && signupForm.userName.$dirty">User Name must be atleast six character</span>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <input name="mobileNo" type="text" class="form-control" placeholder="Mobile No" data-ng-model="registration.mobileNo" required />
+                        <span class="span-invalid" ng-show="signupForm.mobileNo.$error.required && signupForm.mobileNo.$dirty">Mobile No is required</span>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <input name="password" type="password" class="form-control" placeholder="Password" data-ng-model="registration.password" required data-ng-minlength="6" />
+                        <span class="span-invalid" ng-show="signupForm.password.$error.required && signupForm.password.$dirty">Password is required</span>
+                        <span class="span-invalid" ng-show="signupForm.password.$error.minlength && signupForm.password.$dirty">Password must be atleast six character</span>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <input name="confirmPassword" type="password" class="form-control" placeholder="Confirm Password" data-ng-model="registration.confirmPassword" data-match="registration.password" />
+                        <span class="span-invalid" ng-show="signupForm.confirmPassword.$error.match && signupForm.confirmPassword.$dirty">Confirm Password must be match with password</span>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <button class="btn btn-info btn-block" type="submit" data-ng-click="signUp()" data-ng-disabled="!signupForm.$valid || isDisabled">Submit</button>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <div data-ng-hide="message == ''" data-ng-class="(savedSuccessfully) ? 'alert alert-success' : 'alert alert-danger'">
+                            {{message}}
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div><!--/sign up form-->
+    </div>
+</div>

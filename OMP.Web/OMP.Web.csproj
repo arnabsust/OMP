@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0186DF0D-3D30-4226-AA54-EF77FE218207}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OMP.Web</RootNamespace>
+    <AssemblyName>OMP.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort>44302</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\components\authentication\controllers\associateCtrl.js" />
+    <Content Include="app\components\authentication\controllers\refreshCtrl.js" />
+    <Content Include="app\components\authentication\views\associate.html" />
+    <Content Include="app\components\authentication\views\refresh.html" />
+    <Content Include="app\components\buyer\controllers\shoppingCtrl.js" />
+    <Content Include="app\components\buyer\services\shoppingCartService.js" />
+    <Content Include="app\components\buyer\views\billingAddress\shopping.billing.address.step.html" />
+    <Content Include="app\components\buyer\views\membershipOffer\membershipOffer.css" />
+    <Content Include="app\components\buyer\views\membershipOffer\shopping.membership.offer.step.html" />
+    <Content Include="app\components\buyer\views\paymentMethod\Delta.png" />
+    <Content Include="app\components\buyer\views\paymentMethod\Discover.png" />
+    <Content Include="app\components\buyer\views\paymentMethod\Maestro.png" />
+    <Content Include="app\components\buyer\views\paymentMethod\MasterCard.png" />
+    <Content Include="app\components\buyer\views\paymentMethod\paymentMethod.css" />
+    <Content Include="app\components\buyer\views\paymentMethod\shopping.payment.method.step.html" />
+    <Content Include="app\components\buyer\views\paymentMethod\Visa.png" />
+    <Content Include="app\components\buyer\views\paymentMethod\VisaElectron.png" />
+    <Content Include="app\components\buyer\views\payment\shopping.payment.step.html" />
+    <Content Include="app\components\buyer\views\shippingAddress\shopping.shipping.address.step.html" />
+    <Content Include="app\components\buyer\views\shippingMethod\shippingMethod.css" />
+    <Content Include="app\components\buyer\views\shippingMethod\shopping.shipping.method.step.html" />
+    <Content Include="app\components\buyer\views\shopping.billing.address.html" />
+    <Content Include="app\components\buyer\views\shopping.cart.html" />
+    <Content Include="app\components\buyer\views\shopping.invoice.html" />
+    <Content Include="app\components\buyer\views\shopping.membership.offer.html" />
+    <Content Include="app\components\buyer\views\shopping.payment.html" />
+    <Content Include="app\components\buyer\views\shopping.payment.method.html" />
+    <Content Include="app\components\buyer\views\shopping.shipping.address.html" />
+    <Content Include="app\components\buyer\views\shopping.shipping.method.html" />
+    <Content Include="app\components\buyer\views\shopping.status.html" />
+    <Content Include="app\components\buyer\views\shoppingCart.html" />
+    <Content Include="app\components\buyer\views\shoppingCart\shopping.cart.step.html" />
+    <Content Include="app\components\buyer\views\shoppingCart\stepwizard.css" />
+    <Content Include="app\components\buyer\views\shoppingInvoice\shopping.invoice.step.html" />
+    <Content Include="app\components\buyer\views\shoppingInvoice\shoppingInvoice.css" />
+    <Content Include="app\components\buyer\views\shoppingStatus\shoppingStatus.css" />
+    <Content Include="app\components\cart\controllers\cartCtrl.js" />
+    <Content Include="app\components\cart\services\cartService.js" />
+    <Content Include="app\components\cart\views\cart.html" />
+    <Content Include="app\components\cart\views\cart\cart.css" />
+    <Content Include="app\components\global\controllers\uploadCtrl.js" />
+    <Content Include="app\components\global\service\signalr-service.js" />
+    <Content Include="app\components\home\views\home\home.css" />
+    <Content Include="app\components\product\controllers\orderCtrl.js" />
+    <Content Include="app\components\product\controllers\productDetailCtrl.js" />
+    <Content Include="app\components\product\controllers\productCtrl.js" />
+    <Content Include="app\components\product\controllers\productUploadCtrl.js" />
+    <Content Include="app\components\product\controllers\wishListCtrl.js" />
+    <Content Include="app\components\product\services\productCategoryService.js" />
+    <Content Include="app\components\product\services\productDetailsService.js" />
+    <Content Include="app\components\product\services\productService.js" />
+    <Content Include="app\components\product\services\productUploadService.js" />
+    <Content Include="app\components\product\views\orderList.html" />
+    <Content Include="app\components\product\views\productDetails.html" />
+    <Content Include="app\components\product\views\productOffer\productOffer.css" />
+    <Content Include="app\components\product\views\products.html" />
+    <Content Include="app\components\product\views\productUpload.html" />
+    <Content Include="app\components\product\views\product\images\dell-streak-7.0.jpg" />
+    <Content Include="app\components\product\views\product\images\dell-streak-7.1.jpg" />
+    <Content Include="app\components\product\views\product\images\dell-streak-7.2.jpg" />
+    <Content Include="app\components\product\views\product\images\dell-streak-7.3.jpg" />
+    <Content Include="app\components\product\views\product\images\dell-streak-7.4.jpg" />
+    <Content Include="app\components\product\views\product\images\dell-venue.0.jpg" />
+    <Content Include="app\components\product\views\product\images\dell-venue.1.jpg" />
+    <Content Include="app\components\product\views\product\images\dell-venue.2.jpg" />
+    <Content Include="app\components\product\views\product\images\dell-venue.3.jpg" />
+    <Content Include="app\components\product\views\product\images\dell-venue.4.jpg" />
+    <Content Include="app\components\product\views\product\images\dell-venue.5.jpg" />
+    <Content Include="app\components\product\views\product\images\droid-2-global-by-motorola.0.jpg" />
+    <Content Include="app\components\product\views\product\images\droid-2-global-by-motorola.1.jpg" />
+    <Content Include="app\components\product\views\product\images\droid-2-global-by-motorola.2.jpg" />
+    <Content Include="app\components\product\views\product\images\droid-pro-by-motorola.0.jpg" />
+    <Content Include="app\components\product\views\product\images\droid-pro-by-motorola.1.jpg" />
+    <Content Include="app\components\product\views\product\images\lg-axis.0.jpg" />
+    <Content Include="app\components\product\views\product\images\lg-axis.1.jpg" />
+    <Content Include="app\components\product\views\product\images\lg-axis.2.jpg" />
+    <Content Include="app\components\product\views\product\images\motorola-atrix-4g.0.jpg" />
+    <Content Include="app\components\product\views\product\images\motorola-atrix-4g.1.jpg" />
+    <Content Include="app\components\product\views\product\images\motorola-atrix-4g.2.jpg" />
+    <Content Include="app\components\product\views\product\images\motorola-atrix-4g.3.jpg" />
+    <Content Include="app\components\product\views\product\images\motorola-bravo-with-motoblur.0.jpg" />
+    <Content Include="app\components\product\views\product\images\motorola-bravo-with-motoblur.1.jpg" />
+    <Content Include="app\components\product\views\product\images\motorola-bravo-with-motoblur.2.jpg" />
+    <Content Include="app\components\product\views\product\images\motorola-charm-with-motoblur.0.jpg" />
+    <Content Include="app\components\product\views\product\images\motorola-charm-with-motoblur.1.jpg" />
+    <Content Include="app\components\product\views\product\images\motorola-charm-with-motoblur.2.jpg" />
+    <Content Include="app\components\product\views\product\images\motorola-defy-with-motoblur.0.jpg" />
+    <Content Include="app\components\product\views\product\images\motorola-defy-with-motoblur.1.jpg" />
+    <Content Include="app\components\product\views\product\images\motorola-defy-with-motoblur.2.jpg" />
+    <Content Include="app\components\product\views\product\images\motorola-xoom-with-wi-fi.0.jpg" />
+    <Content Include="app\components\product\views\product\images\motorola-xoom-with-wi-fi.1.jpg" />
+    <Content Include="app\components\product\views\product\images\motorola-xoom-with-wi-fi.2.jpg" />
+    <Content Include="app\components\product\views\product\images\motorola-xoom-with-wi-fi.3.jpg" />
+    <Content Include="app\components\product\views\product\images\motorola-xoom-with-wi-fi.4.jpg" />
+    <Content Include="app\components\product\views\product\images\motorola-xoom-with-wi-fi.5.jpg" />
+    <Content Include="app\components\product\views\product\images\motorola-xoom.0.jpg" />
+    <Content Include="app\components\product\views\product\images\motorola-xoom.1.jpg" />
+    <Content Include="app\components\product\views\product\images\motorola-xoom.2.jpg" />
+    <Content Include="app\components\product\views\product\images\nexus-s.0.jpg" />
+    <Content Include="app\components\product\views\product\images\nexus-s.1.jpg" />
+    <Content Include="app\components\product\views\product\images\nexus-s.2.jpg" />
+    <Content Include="app\components\product\views\product\images\nexus-s.3.jpg" />
+    <Content Include="app\components\product\views\product\images\samsung-galaxy-tab.0.jpg" />
+    <Content Include="app\components\product\views\product\images\samsung-galaxy-tab.1.jpg" />
+    <Content Include="app\components\product\views\product\images\samsung-galaxy-tab.2.jpg" />
+    <Content Include="app\components\product\views\product\images\samsung-galaxy-tab.3.jpg" />
+    <Content Include="app\components\product\views\product\images\samsung-galaxy-tab.4.jpg" />
+    <Content Include="app\components\product\views\product\images\samsung-galaxy-tab.5.jpg" />
+    <Content Include="app\components\product\views\product\images\samsung-galaxy-tab.6.jpg" />
+    <Content Include="app\components\product\views\product\images\samsung-gem.0.jpg" />
+    <Content Include="app\components\product\views\product\images\samsung-gem.1.jpg" />
+    <Content Include="app\components\product\views\product\images\samsung-gem.2.jpg" />
+    <Content Include="app\components\product\views\product\images\samsung-mesmerize-a-galaxy-s-phone.0.jpg" />
+    <Content Include="app\components\product\views\product\images\samsung-mesmerize-a-galaxy-s-phone.1.jpg" />
+    <Content Include="app\components\product\views\product\images\samsung-mesmerize-a-galaxy-s-phone.2.jpg" />
+    <Content Include="app\components\product\views\product\images\samsung-mesmerize-a-galaxy-s-phone.3.jpg" />
+    <Content Include="app\components\product\views\product\images\samsung-showcase-a-galaxy-s-phone.0.jpg" />
+    <Content Include="app\components\product\views\product\images\samsung-showcase-a-galaxy-s-phone.1.jpg" />
+    <Content Include="app\components\product\views\product\images\samsung-showcase-a-galaxy-s-phone.2.jpg" />
+    <Content Include="app\components\product\views\product\images\samsung-transform.0.jpg" />
+    <Content Include="app\components\product\views\product\images\samsung-transform.1.jpg" />
+    <Content Include="app\components\product\views\product\images\samsung-transform.2.jpg" />
+    <Content Include="app\components\product\views\product\images\samsung-transform.3.jpg" />
+    <Content Include="app\components\product\views\product\images\samsung-transform.4.jpg" />
+    <Content Include="app\components\product\views\product\images\sanyo-zio.0.jpg" />
+    <Content Include="app\components\product\views\product\images\sanyo-zio.1.jpg" />
+    <Content Include="app\components\product\views\product\images\sanyo-zio.2.jpg" />
+    <Content Include="app\components\product\views\product\images\t-mobile-g2.0.jpg" />
+    <Content Include="app\components\product\views\product\images\t-mobile-g2.1.jpg" />
+    <Content Include="app\components\product\views\product\images\t-mobile-g2.2.jpg" />
+    <Content Include="app\components\product\views\product\images\t-mobile-mytouch-4g.0.jpg" />
+    <Content Include="app\components\product\views\product\images\t-mobile-mytouch-4g.1.jpg" />
+    <Content Include="app\components\product\views\product\images\t-mobile-mytouch-4g.2.jpg" />
+    <Content Include="app\components\product\views\product\images\t-mobile-mytouch-4g.3.jpg" />
+    <Content Include="app\components\product\views\product\images\t-mobile-mytouch-4g.4.jpg" />
+    <Content Include="app\components\product\views\product\images\t-mobile-mytouch-4g.5.jpg" />
+    <Content Include="app\components\product\views\product\product.css" />
+    <Content Include="app\components\product\views\wishlist.html" />
+    <Content Include="app\components\shop\controllers\shopCtrl.js" />
+    <Content Include="app\components\shop\services\shopService.js" />
+    <Content Include="app\components\shop\views\shop.html" />
+    <Content Include="app\components\user\controllers\profileCtrl.js" />
+    <Content Include="app\components\authentication\services\authInterceptorService.js" />
+    <Content Include="app\components\user\controllers\userProfileTabCtrl.js" />
+    <Content Include="app\components\user\services\profileService.js" />
+    <Content Include="app\components\user\views\profile.html" />
+    <Content Include="app\components\global\controllers\indexCtrl.js" />
+    <Content Include="app\components\home\controllers\aboutCtrl.js" />
+    <Content Include="app\components\authentication\controllers\loginCtrl.js" />
+    <Content Include="app\components\authentication\services\authService.js" />
+    <Content Include="app\components\authentication\views\login.html" />
+    <Content Include="app\components\home\views\about.html" />
+    <Content Include="app\components\home\views\about\1.jpg" />
+    <Content Include="app\components\home\views\about\2.jpg" />
+    <Content Include="app\components\home\views\about\3.jpg" />
+    <Content Include="app\components\home\views\about\4.jpg" />
+    <Content Include="app\shared\animations.js" />
+    <Content Include="app\shared\directive\modalDialog.js" />
+    <Content Include="assets\css\vendor\bootstrap\bootstrap.min.css" />
+    <Content Include="assets\css\vendor\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\css\vendor\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="assets\css\vendor\angular-toaster\toaster.min.css" />
+    <Content Include="assets\css\vendor\font-awesome\font-awesome.min.css" />
+    <Content Include="assets\css\vendor\main.css" />
+    <Content Include="assets\css\vendor\responsive\responsive.css" />
+    <Content Include="assets\images\cart\one.png" />
+    <Content Include="assets\images\cart\three.png" />
+    <Content Include="assets\images\cart\two.png" />
+    <Content Include="assets\images\home\bg_border.png" />
+    <Content Include="assets\images\home\logo.png" />
+    <Content Include="assets\images\home\new.png" />
+    <Content Include="assets\images\home\product1.jpg" />
+    <Content Include="assets\images\home\product2.jpg" />
+    <Content Include="assets\images\home\product3.jpg" />
+    <Content Include="assets\images\home\product4.jpg" />
+    <Content Include="assets\images\home\product5.jpg" />
+    <Content Include="assets\images\home\product6.jpg" />
+    <Content Include="assets\images\home\searchicon.png" />
+    <Content Include="assets\images\product-details\1.jpg" />
+    <Content Include="assets\images\product-details\new.jpg" />
+    <Content Include="assets\images\product-details\rating.png" />
+    <Content Include="assets\images\product-details\share.png" />
+    <Content Include="assets\images\product-details\similar1.jpg" />
+    <Content Include="assets\images\product-details\similar2.jpg" />
+    <Content Include="assets\images\product-details\similar3.jpg" />
+    <Content Include="assets\js\custom\authComplete.js" />
+    <Content Include="assets\js\vendor\angular-file-upload\angular-file-upload-shim.js" />
+    <Content Include="assets\js\vendor\angular-file-upload\angular-file-upload.js" />
+    <Content Include="assets\js\vendor\angular-infinite-scroll\ng-infinite-scroll.min.js" />
+    <Content Include="assets\js\vendor\angular-ng-flow\ng-flow-standalone.min.js" />
+    <Content Include="assets\js\vendor\angular-toaster\toaster.min.js" />
+    <Content Include="assets\js\vendor\angular-ui\ui-bootstrap-tpls-0.11.0.min.js" />
+    <Content Include="assets\js\vendor\angular\angular-animate.min.js.map" />
+    <Content Include="assets\js\vendor\angular\angular-aria.min.js.map" />
+    <Content Include="assets\js\vendor\angular\angular-cookies.min.js.map" />
+    <Content Include="assets\js\vendor\angular\angular-loader.min.js.map" />
+    <Content Include="assets\js\vendor\angular\angular-messages.min.js.map" />
+    <Content Include="assets\js\vendor\angular\angular-resource.min.js.map" />
+    <Content Include="assets\js\vendor\angular\angular-route.min.js.map" />
+    <Content Include="assets\js\vendor\angular\angular-sanitize.min.js.map" />
+    <Content Include="assets\js\vendor\angular\angular-touch.min.js.map" />
+    <Content Include="assets\js\vendor\angular\angular.min.js.map" />
+    <Content Include="assets\js\vendor\bootstrap\bootstrap-filestyle.min.js" />
+    <Content Include="assets\js\vendor\jQuery\jquery.prettyPhoto.js" />
+    <Content Include="assets\js\vendor\jQuery\jquery-1.11.2.min.js" />
+    <Content Include="assets\js\vendor\price-range\price-range.js" />
+    <Content Include="assets\js\vendor\signalr\jquery.signalR-2.2.0.min.js" />
+    <Content Include="authComplete.html" />
+    <Content Include="assets\css\vendor\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\css\vendor\fonts\FontAwesome.otf" />
+    <Content Include="assets\css\vendor\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="Properties\PublishProfiles\ToFile.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\app.module.js" />
+    <Content Include="app\app.routes.js" />
+    <Content Include="app\components\authentication\controllers\signupCtrl.js" />
+    <Content Include="app\components\authentication\views\signup.html" />
+    <Content Include="app\components\home\controllers\homeCtrl.js" />
+    <Content Include="app\components\home\views\home.html" />
+    <Content Include="assets\css\site.css" />
+    <Content Include="assets\css\vendor\angular-loading-bar\loading-bar.min.css" />
+    <Content Include="assets\js\vendor\angular-loading-bar\loading-bar.min.js" />
+    <Content Include="assets\js\vendor\angular-local-storage\angular-local-storage.min.js" />
+    <Content Include="assets\js\vendor\angular-ui-router\angular-ui-router.min.js" />
+    <Content Include="assets\js\vendor\angular\angular-animate.min.js" />
+    <Content Include="assets\js\vendor\angular\angular-aria.min.js" />
+    <Content Include="assets\js\vendor\angular\angular-cookies.min.js" />
+    <Content Include="assets\js\vendor\angular\angular-loader.min.js" />
+    <Content Include="assets\js\vendor\angular\angular-messages.min.js" />
+    <Content Include="assets\js\vendor\angular\angular-resource.min.js" />
+    <Content Include="assets\js\vendor\angular\angular-route.min.js" />
+    <Content Include="assets\js\vendor\angular\angular-sanitize.min.js" />
+    <Content Include="assets\js\vendor\angular\angular-touch.min.js" />
+    <Content Include="assets\js\vendor\angular\angular.min.js" />
+    <Content Include="assets\js\vendor\bootstrap\bootstrap.js" />
+    <Content Include="assets\js\vendor\bootstrap\bootstrap.min.js" />
+    <Content Include="index.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\components\home\services\" />
+    <Folder Include="assets\uploads\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>25483</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44302/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

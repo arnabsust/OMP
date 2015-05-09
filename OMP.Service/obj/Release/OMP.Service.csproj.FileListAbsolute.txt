@@ -1,0 +1,9 @@
+E:\WORKSPACE\CWC\2015\OMP\OMP.Service\bin\Release\OMP.Service.dll
+E:\WORKSPACE\CWC\2015\OMP\OMP.Service\bin\Release\OMP.Service.pdb
+E:\WORKSPACE\CWC\2015\OMP\OMP.Service\bin\Release\OMP.Domain.dll
+E:\WORKSPACE\CWC\2015\OMP\OMP.Service\bin\Release\EntityFramework.dll
+E:\WORKSPACE\CWC\2015\OMP\OMP.Service\bin\Release\OMP.Domain.pdb
+E:\WORKSPACE\CWC\2015\OMP\OMP.Service\bin\Release\EntityFramework.xml
+E:\WORKSPACE\CWC\2015\OMP\OMP.Service\obj\Release\OMP.Service.csprojResolveAssemblyReference.cache
+E:\WORKSPACE\CWC\2015\OMP\OMP.Service\obj\Release\OMP.Service.dll
+E:\WORKSPACE\CWC\2015\OMP\OMP.Service\obj\Release\OMP.Service.pdb

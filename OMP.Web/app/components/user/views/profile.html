@@ -1,0 +1,61 @@
+<div class="row well">
+    <div class="col-sm-6">
+        <div class="contact-form">
+            <h3 class="title text-center">Account</h3>
+            <hr />
+            <form name="userProfileForm" class="contact-form row" method="post">
+                <div class="row col-md-12">
+                    <div class="form-group col-md-12">
+                        <input name="userName" type="text" class="form-control" data-ng-model="userProfile.userName" disabled />
+                    </div>
+                    <div class="form-group col-md-12">
+                        <input name="email" type="email" class="form-control" data-ng-model="userProfile.email" required />
+                        <span class="span-invalid" ng-show="userProfileForm.email.$error.required && userProfileForm.email.$dirty">Email is required</span>
+                        <span class="span-invalid" ng-show="signupForm.email.$error.email && signupForm.email.$dirty">Invalid Email</span>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <input name="fullName" type="text" class="form-control" placeholder="Full Name" data-ng-model="userProfile.fullName" required />
+                        <span class="span-invalid" ng-show="userProfileForm.fullName.$error.required && userProfileForm.fullName.$dirty">Full name is required</span>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <input name="mobileNo" type="text" class="form-control" placeholder="Last Name" data-ng-model="userProfile.mobileNo" required />
+                        <span class="span-invalid" ng-show="userProfileForm.mobileNo.$error.required && userProfileForm.mobileNo.$dirty">Mobile No is required</span>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <input name="fatherName" type="text" class="form-control" placeholder="Father's Name" data-ng-model="userProfile.fathersName" />
+                    </div>
+                    <div class="form-group col-md-12">
+                        <textarea name="street" class="form-control" placeholder="Address" rows="3" data-ng-model="userProfile.address"></textarea>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <input name="city" type="text" class="form-control" placeholder="City" data-ng-model="userProfile.city" />
+                    </div>
+                    <div class="form-group col-md-12">
+                        <input name="country" type="text" class="form-control" placeholder="Country" data-ng-model="userProfile.country" />
+                    </div>
+                    <div class="form-group col-md-12">
+                        <button class="btn btn-primary pull-right" type="submit" data-ng-click="save()" data-ng-disabled="!userProfileForm.$valid || isDisabled">Update Profile</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="contact-form">
+            <h3 class="title text-center">Profile Picture</h3>
+            <hr />
+            <div class="user-image">
+                <img src="{{baseUrl}}/Content/UserProfileUpload/{{userProfile.imageUrl}}" width="300">
+            </div>
+            <hr />
+            <div ng-controller="uploadCtrl">
+                <div data-ng-hide="percentage == '0%'" class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{percentage}};">
+                        <span class="sr-only">{{percentage}}</span>
+                    </div>
+                </div>
+                <input type="file" class="filestyle" ng-file-select="onFileSelect($files, 'ProfileUpload')">
+            </div>
+        </div>
+    </div>
+</div>

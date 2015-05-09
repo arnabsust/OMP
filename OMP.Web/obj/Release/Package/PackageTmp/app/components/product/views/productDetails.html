@@ -1,0 +1,106 @@
+﻿<div class="row well">
+    <h3 class="page-header">{{productVM.categoryName}} - {{productVM.productTitle}} - {{productVM.productCode}}</h3>
+    <div class="row">
+        <div class="col-md-8">
+            <div>
+                <carousel interval="interval">
+                    <slide ng-repeat="slide in imageList" active="slide.active">
+                        <img src="{{baseUrl}}/Content/ProductImageUpload/{{slide.imageUrl}}" style="margin:auto;">
+                    </slide>
+                </carousel>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="col-md-12">
+                <label class="form-label">Price</label>
+                <div class="dollar">$ {{productVM.unitPrice}}</div>
+            </div>
+            <div class="col-md-12">
+                <label class="form-label">Available Quantity</label>
+                <div class="stock">{{productVM.stockQuantity}}</div>
+            </div>
+            <div class="col-md-12 form-group">
+                <button class="btn btn-success btn-block" ng-click="createWishlist(productVM.productID)">Add to my whishlist</button>
+            </div>
+            <div class="col-md-12 form-group">
+                <input type="number" class="form-control" data-ng-model="quantity" placeholder="Quantity" />
+            </div>
+            <div class="col-md-12 form-group">
+                <button class="btn btn-warning btn-block" data-ng-click="addToCart()">Add to my cart</button>
+            </div>
+            <div class="col-md-12"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="12">
+            <div class="col-md-12">
+                <p class="page-header">{{productVM.productShortDescription}}</p>
+            </div>
+
+            <div class="col-md-12">
+                <p>{{productVM.productDescription}}</p>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------------------------------------------------->
+    <div class="row">
+        <div class="col-md-12">
+            <h4 class="page-header">Seller Profile</h4>
+        </div>
+        <div class="col-md-12">
+            <div ng-controller="userProfileTabCtrl">
+                <tabset>
+                    <tab heading="Static title">
+                        <hr />
+                        <div class="well col-md-offset-2 col-md-8">
+                            <div class="row">
+                                <img width="100" src="{{baseUrl}}/Content/UserProfileUpload/{{userProfile.imageUrl}}" />
+                            </div>
+                            <div class="row">
+                                <label class="form-label">Email: {{userProfile.email}}</label>
+                            </div>
+                            <div class="row">
+                                <label class="form-label">Full Name: {{userProfile.fullName}}</label>
+                            </div>
+                            <div class="row">
+                                <label class="form-label">Mobile No: {{userProfile.mobileNo}}</label>
+                            </div>
+                            <div class="row">
+                                <label class="form-label">Address: {{userProfile.address}}</label>
+                            </div>
+                            <div class="row">
+                                <label class="form-label">Rating: <rating ng-model="rate" max="max" readonly="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null"></rating></label>
+                            </div>
+                        </div>
+                        
+                    </tab>
+                    <tab heading="Location Info" active="tab.active">
+                        Location
+                    </tab>
+                </tabset>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------------------------------------------------->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-12">
+                <h4 class="page-header">Related Products</h4>
+            </div>
+
+            <div class="col-md-12">
+                <div class="product-image col-sm-3 single-products" ng-repeat="item in relatedProductsList">
+                    <a class="thumbnail" href="#/productdetails/{{item.productID}}">
+                        <img src="{{baseUrl}}/Content/ProductImageUpload/{{item.imageUrl}}" width="100" />
+                    </a>
+                    <div class="product-overlay">
+                        <div class="overlay-content">
+                            <h2>${{item.unitPrice}}</h2>
+                            <p><a href="#/productdetails/{{item.productID}}">{{item.productTitle}}</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

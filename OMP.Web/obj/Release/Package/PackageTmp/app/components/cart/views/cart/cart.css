@@ -1,0 +1,181 @@
+.cart_items .cart_info
+{
+	border:1px solid #E6E4DF;
+	margin-bottom:50px;
+}
+
+.cart_items .table
+{
+	margin-bottom:20px;
+	width:100%;
+}
+
+.cart_items .cart_info .cart_menu
+{
+	background:#92c4dd;
+	color:#fff;
+	font-family:Roboto, sans-serif;
+	font-size:16px;
+	font-weight:400;
+}
+
+.cart_items .cart_info .table-condensed.table tr
+{
+	border-bottom:1px solid#F7F7F0;
+}
+
+.cart_items .cart_info .table-condensed.table thead tr
+{
+	height:51px;
+}
+
+.cart_items .cart_info .table-condensed.table tr:last-child
+{
+	border-bottom:0;
+}
+
+.cart_items .cart_product
+{
+	display:block;
+	margin:15px -70px 10px 25px;
+}
+
+.cart_items .cart_delete
+{
+	display:block;
+	margin-right:-12px;
+	overflow:hidden;
+}
+
+.cart_items .table > thead > tr > td,.cart_items .table > tbody > tr > td/**,.table > tfoot > tr > td**/
+{
+	border-top:1px solid #ddd;
+	line-height:1.4285;
+	padding:8px;
+	vertical-align:top;
+}
+
+.cart_items .table-condensed > thead > tr > td,.cart_items .table-condensed > tbody > tr > td/**,.table-condensed > tfoot > tr > td**/
+{
+	padding:5px;
+}
+
+.cart_items .cart_info table tr td
+{
+	border-top:0 none;
+	vertical-align:inherit;
+}
+
+.cart_items .cart_delete a
+{
+	background:#ffa12e;
+	color:#fff;
+	font-size:16px;
+	padding:5px 7px;
+}
+
+.cart_items .fa
+{
+	-moz-osx-font-smoothing:grayscale;
+	-webkit-font-smoothing:antialiased;
+	display:inline-block;
+	font-family:FontAwesome;
+	font-style:normal;
+	font-weight:400;
+	line-height:1;
+}
+
+.cart_items .fa-times::before
+{
+	content:"\f00d";
+}
+
+.cart_items .cart_info .cart_total_price
+{
+	color:#009dda;
+	font-size:24px;
+}
+
+.cart_items .cart_info .cart_price p
+{
+	color:#696763;
+	font-size:18px;
+}
+
+.cart_items .cart_info .cart_description h4
+{
+	margin-bottom:0;
+}
+
+.cart_items .cart_info .cart_description p
+{
+	color:#696763;
+}
+
+.cart_items .cart_info .cart_description h4 a
+{
+	color:#363432;
+	font-family:Roboto,sans-serif;
+	font-size:20px;
+	font-weight:400;
+}
+
+.cart_items .table > thead:first-child > tr:first-child > td
+{
+	border-top:0;
+}
+
+.cart_items .cart_info .image
+{
+	padding-left:30px;
+}
+
+
+.cart_items #do_action
+{
+	margin-bottom:50px;
+}
+
+.cart_items .update,.cart_items .check_out
+{
+	background:#92c4dd;
+	border:none;
+	border-radius:0;
+	color:#fff;
+	margin-top:18px;
+	padding:5px 15px;
+}
+
+.cart_items .update
+{
+	margin-left:40px;
+}
+
+.cart_items .check_out
+{
+	margin-left:20px;
+}
+
+.cart_items .total_area ul li
+{
+	background:#E6E4DF;
+	color:#696763;
+	margin-top:10px;
+	padding:7px 20px;
+}
+
+.cart_items .total_area span
+{
+	float:right;
+}
+
+.cart_items select,.cart_items textarea
+{
+	background:#F0F0E9;
+	border:0;
+	border-radius:0;
+	color:#696763;
+	padding:5px;
+	resize:none;
+	width:100%;
+}

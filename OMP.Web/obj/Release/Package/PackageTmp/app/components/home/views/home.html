@@ -1,0 +1,35 @@
+﻿<div class="jumbotron">
+    <div class="container">
+        <div class="page-header text-center">
+            <h1>Southtech Online Market Place</h1>
+        </div>
+        <div class="row welcomeProducts">
+            <div class="col-lg-3" ng-repeat="product in products">
+                <div class="cuadro_intro_hover " style="background-color:#cccccc;">
+                    <p style="text-align:center; margin-top:20px;">
+                        <img alt="{{product.name}}" class="img-responsive" style="height: 180px; width: 100%; display: block;" ng-src="{{product.imageUrl}}" data-holder-rendered="true">
+                    </p>
+                    <div class="caption">
+                        <div class="blur"></div>
+                        <div class="caption-text">
+                            <h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">{{product.name}}</h3>
+                            <a ui-sref="products.detail({productId:product.id})" style="font-size:small">{{product.snippet}}</a>
+                            <br />
+                            <a class=" btn btn-default" href="#"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                            <a class=" btn btn-default" href="#"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-eye-open"></span></a>
+                            <a class=" btn btn-default" href="#"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-star"></span></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail">
+                    <img data-src="holder.js/100%x180" alt="100%x180" style="height: 180px; width: 100%; display: block;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE3MSAxODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzPjwvZGVmcz48cmVjdCB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgZmlsbD0iI0VFRUVFRSI+PC9yZWN0PjxnPjx0ZXh0IHg9IjYwLjUiIHk9IjkwIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MTcxeDE4MDwvdGV4dD48L2c+PC9zdmc+" data-holder-rendered="true">
+                </a>
+            </div>
+            -->
+        </div>
+    </div>
+</div>

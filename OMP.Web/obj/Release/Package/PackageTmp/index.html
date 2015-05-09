@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html data-ng-app="omp" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible" />
+    <title>Home | VAZAR</title>
+    <link href="assets/css/vendor/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/vendor/font-awesome/font-awesome.min.css" rel="stylesheet" />
+    <!--<link href="assets/css/vendor/main.css" rel="stylesheet" />-->
+    <link href="assets/css/vendor/responsive/responsive.css" rel="stylesheet" />
+
+    <link href="assets/css/vendor/angular-loading-bar/loading-bar.min.css" rel="stylesheet" />
+    <link href="assets/css/site.css" rel="stylesheet" />
+    <link href="assets/css/vendor/angular-toaster/toaster.min.css" rel="stylesheet" />
+    <link href="app/components/cart/views/cart/cart.css" rel="stylesheet" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head>
+
+<body>
+    <header id="header" data-ng-controller="indexCtrl">
+        <!--header-->
+        <div class="header-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="logo pull-left">
+                            <a href="#/"><img src="assets/images/home/logo.png" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="shop-menu pull-right">
+                            <ul class="nav navbar-nav">
+                                <li data-ng-hide="!authentication.isAuth"><a href="#/profile"><i class="fa fa-user"></i> Welcome {{authentication.userName}} </a></li>
+                                <li data-ng-hide="!authentication.isAuth" class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">My Service <span class="caret"></span></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#/shop"><i class="fa fa-user"></i> Update Shop Details</a></li>
+                                        <li><a href="#/productupload">Upload a Product</a></li>
+                                        <li><a href="#/products/own">My Products</a></li>
+                                        <li><a href="#/myorders">My orders</a></li>
+                                    </ul>
+                                </li>
+                                <li data-ng-hide="!authentication.isAuth"><a href="#/wishlist"><i class="fa fa-star"></i> Wishlist</a></li>
+                                <li><a href="#/checkout"><i class="fa fa-check-circle"></i> Checkout</a></li>
+                                <li data-ng-hide="authentication.isAuth"><a href="#/login"><i class="fa fa-lock"></i> Login</a></li>
+                                <li data-ng-hide="!authentication.isAuth"><a href="" data-ng-click="logOut()"><i class="fa fa-lock"></i> Logout</a></li>
+                                <li><a href="#/cart"><i class="fa fa-shopping-cart"></i> <span class="itemCount">{{totalCartItem}}</span> Item(s)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container body-container">
+        <toaster-container toaster-options="{'time-out': 4000, 'close-button':true}"></toaster-container>
+        <div ui-view></div>
+    </div>
+
+    <!--<div class="container">
+        <div class="row">
+            <div ui-view="steps" class="slide"></div>
+        </div>
+    </div>-->
+    
+    <footer id="footer">
+        <!--Footer-->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <p class="pull-left">Copyright © <a href="#/about">Southtech Code Warrior Team</a>. All rights resurved</p>
+                </div>
+            </div>
+        </div>
+
+    </footer><!--/Footer-->
+
+    <!--Loading jQuery & bootstrap Library-->
+    <script src="assets/js/vendor/jQuery/jquery-1.11.2.min.js"></script>
+    <script src="assets/js/vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/bootstrap/bootstrap-filestyle.min.js"></script>
+
+    <script src="assets/js/vendor/angular-file-upload/angular-file-upload-shim.js"></script>
+
+    <!--Loading angular Library-->
+    <script src="assets/js/vendor/angular/angular.min.js"></script>
+    <script src="assets/js/vendor/angular/angular-resource.min.js"></script>
+    <script src="assets/js/vendor/angular-ui-router/angular-ui-router.min.js"></script>
+    <script src="assets/js/vendor/angular-local-storage/angular-local-storage.min.js"></script>
+    <script src="assets/js/vendor/angular/angular-animate.min.js"></script>
+    <script src="assets/js/vendor/angular-toaster/toaster.min.js"></script>
+    <script src="assets/js/vendor/angular-loading-bar/loading-bar.min.js"></script>
+    <script src="assets/js/vendor/angular-infinite-scroll/ng-infinite-scroll.min.js"></script>
+    <script src="assets/js/vendor/angular-ui/ui-bootstrap-tpls-0.11.0.min.js"></script>
+
+    <!--Loading ng flow for upload file-->
+    <script src="assets/js/vendor/angular-ng-flow/ng-flow-standalone.min.js"></script>
+    <script src="assets/js/vendor/angular-file-upload/angular-file-upload.js"></script>
+
+    <!--Loading App module and route configuration-->
+    <script src="app/app.module.js"></script>
+    <script src="app/app.routes.js"></script>
+
+    <script src="app/shared/animations.js"></script>
+
+    <script src="app/shared/directive/modalDialog.js"></script>
+
+    <!--Load Services-->
+    <script src="app/components/authentication/services/authInterceptorService.js"></script>
+    <script src="app/components/authentication/services/authService.js"></script>
+
+    <script src="app/components/user/services/profileService.js"></script>
+    <script src="app/components/shop/services/shopService.js"></script>
+
+    <script src="app/components/product/services/productCategoryService.js"></script>
+    <script src="app/components/product/services/productUploadService.js"></script>
+
+    <script src="app/components/product/services/productService.js"></script>
+    <script src="app/components/product/services/productDetailsService.js"></script>
+    <script src="app/components/cart/services/cartService.js"></script>
+    <!--<script src="app/components/buyer/services/shoppingCartService.js"></script>-->
+
+    <!--Load Controllers-->
+    <script src="app/components/global/controllers/indexCtrl.js"></script>
+    <script src="app/components/home/controllers/homeCtrl.js"></script>
+    <script src="app/components/authentication/controllers/signupCtrl.js"></script>
+    <script src="app/components/authentication/controllers/loginCtrl.js"></script>
+    <script src="app/components/authentication/controllers/associateCtrl.js"></script>
+
+    <script src="app/components/global/controllers/uploadCtrl.js"></script>
+
+    <script src="app/components/product/controllers/productUploadCtrl.js"></script>
+
+    <script src="app/components/home/controllers/aboutCtrl.js"></script>
+    <script src="app/components/user/controllers/profileCtrl.js"></script>
+    <script src="app/components/shop/controllers/shopCtrl.js"></script>
+
+    <script src="app/components/product/controllers/productCtrl.js"></script>
+    <script src="app/components/product/controllers/productDetailCtrl.js"></script>
+    <script src="app/components/cart/controllers/cartCtrl.js"></script>
+    <script src="app/components/product/controllers/wishListCtrl.js"></script>
+    <script src="app/components/user/controllers/userProfileTabCtrl.js"></script>
+    <script src="app/components/product/controllers/orderCtrl.js"></script>
+    <!--<script src="app/components/buyer/controllers/shoppingCtrl.js"></script>-->
+
+</body>
+
+</html>

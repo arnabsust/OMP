@@ -1,0 +1,41 @@
+﻿<div class="cart_items row well">
+    <h4>My Orders</h4>
+    <hr />
+    <div class="table-responsive cart_info">
+        <table class="table table-condensed">
+            <thead>
+                <tr class="cart_menu">
+                    <td style="width:150px; text-align:center">Order No</td>
+                    <td style="width:150px; text-align:center">Order Date</td>
+                    <td style="width:150px; text-align:center">Order Status</td>
+                    <td style="width:150px; text-align:center">Product</td>
+                    <td style="width:150px; text-align:center">Product Image</td>
+                    <td style="width:150px; text-align:center">Quantity</td>
+                    <td style="width:150px; text-align:center">Unit Price</td>
+                    <td style="width:150px; text-align:center">Total Price</td>
+                    <td style="width:150px; text-align:center">Actions</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in orderList">
+                    <td style="width:150px; text-align:center">{{item.orderNo}}</td>
+                    <td style="width:150px; text-align:center">{{item.orderDate}}</td>
+                    <td style="width:150px; text-align:center" ng-show="item.orderStatus==1">Not Delivered</td>
+                    <td style="width:150px; text-align:center" ng-show="item.orderStatus==2">Delivered</td>
+                    <td style="width:150px; text-align:center" ng-show="item.orderStatus==0">Rejected</td>
+                    <td style="width:150px; text-align:center">{{item.productTitle}}</td>
+                    <td style="width:150px; text-align:center" class="cart_product">
+                        <a href="#/productdetails/{{item.productID}}"><img height="50" alt="" src="{{baseUrl}}/Content/ProductImageUpload/{{item.imageUrl}}"></a>
+                    </td>
+                    <td style="width:150px; text-align:center">{{item.quantity}}</td>
+                    <td style="width:150px; text-align:center">{{item.unitPrice}}</td>
+                    <td style="width:150px; text-align:center">{{item.quantity * item.unitPrice}}</td>
+                    <td style="width:150px; text-align:center">
+                        <button class="btn btn-success" ng-click="delivered(item.orderID)">Delivered</button>
+                        <button class="btn btn-danger" ng-click="reject(item.orderID)">Reject</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

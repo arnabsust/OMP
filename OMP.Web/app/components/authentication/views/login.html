@@ -1,0 +1,41 @@
+﻿<div class="row well">
+    <div class="col-sm-4 col-sm-offset-1">
+        <div class="login-form">
+            <!--login form-->
+            <h3>Login</h3>
+            <hr />
+            <form name="loginForm">
+                <div class="row col-md-12">
+                    <div class="form-group col-md-12">
+                        <input name="userName" type="text" class="form-control" placeholder="Username" data-ng-model="loginData.userName" required />
+                        <span class="span-invalid" ng-show="loginForm.userName.$error.required && loginForm.userName.$dirty">User Name is required</span>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <input name="password" type="password" class="form-control" placeholder="Password" data-ng-model="loginData.password" required />
+                        <span class="span-invalid" ng-show="loginForm.password.$error.required && loginForm.password.$dirty">Password is required</span>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <button class="btn btn-info btn-block" type="submit" data-ng-click="login()" data-ng-disabled="!loginForm.$valid || isDisabled">Login</button>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <button class="btn btn-large btn-facebook btn-block" type="button" data-ng-click="authExternalProvider('Facebook')"><i class="fa fa-facebook"></i>Connect with Facebook</button>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <button class="btn btn-large btn-google-plus btn-block" type="button" data-ng-click="authExternalProvider('Google')"><i class="fa fa-google-plus"></i>Connect with Google+</button>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <div data-ng-hide="message == ''" class="alert alert-danger">
+                            {{message}}
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div><!--/login form-->
+    </div>
+
+    <div class="col-sm-4 col-sm-offset-1">
+        <div class="login-form">
+            <h2><a href="#/signup">Sign up with your email</a></h2>
+        </div>
+    </div>
+</div>

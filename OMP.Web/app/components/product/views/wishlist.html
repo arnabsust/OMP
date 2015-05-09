@@ -1,0 +1,27 @@
+﻿<div class="row">
+    <div class="col-sm-offset-2 col-sm-8">
+        <div class="col-sm-12 well" data-ng-repeat="item in wishList">
+            <div class="product-image col-sm-3">
+                <img width="150" src="{{baseUrl}}/Content/ProductImageUpload/{{item.imageUrl}}">
+            </div>
+            <div class="col-sm-9">
+                <div class="row">
+                    <div class="col-md-10">
+                        <h4>
+                            <a href="#/productdetails/{{item.productID}}">{{item.productCode}} - {{item.productTitle}}</a><span class="pull-right dollar">$ {{item.unitPrice}}</span>
+                        </h4>
+                    </div>
+                    <div class="col-md-2">
+                        <a class="cart_quantity_delete pull-right" href="" data-ng-click="delete(item.productID, $index)"><i class="fa fa-times"></i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <h5>Category: {{item.categoryName}}</h5>
+                </div>
+                <div class="row">
+                    <p>{{item.productShortDescription}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
